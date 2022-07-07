@@ -7,10 +7,10 @@ public class Main {
 	public static void main(String[] args) {
 		final AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext();
 		applicationContext.scan("org.springframework.hyy");
-		applicationContext.start();
+		applicationContext.refresh();
 
 		final MyConfig bean = applicationContext.getBean(MyConfig.class);
-		System.out.println(bean);
+		System.out.println(bean.getConfigName());
 
 	}
 }

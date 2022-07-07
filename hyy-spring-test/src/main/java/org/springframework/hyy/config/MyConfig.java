@@ -1,5 +1,6 @@
 package org.springframework.hyy.config;
 
+import lombok.Data;
 import org.springframework.context.annotation.Configuration;
 
 /**
@@ -8,6 +9,7 @@ import org.springframework.context.annotation.Configuration;
  * @version: 1.0.0
  */
 @Configuration
+@Data
 public class MyConfig {
 	private String configName = "张三";
 }
